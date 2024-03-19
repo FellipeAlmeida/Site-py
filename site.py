@@ -43,7 +43,7 @@ if input_usuario := st.chat_input('Digite aqui...'):
         time.sleep(1)
         texto_pensante.empty()
 
-
+# Respostas Fernanda
     def resposta_fernanda(texto):
         if any(palavra in texto for palavra in ['impostos', '1']):  # IMPOSTOS
             fernanda_pensante()
@@ -137,7 +137,7 @@ if input_usuario := st.chat_input('Digite aqui...'):
             fernanda_pensante()
             return 'Desculpe, Não entendo...'
 
-    # Resposta Fernanda
+    # Resposta formatada
     resposta = resposta_fernanda(input_usuario_lower)
     if resposta:
         resposta_formatada = f'Fernanda: {resposta}'
